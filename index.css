@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Roboto Mono', 'Noto Sans TC', sans-serif;
+}
+.box{
+  width: 600px;
+  margin: auto;
+}
+.card{
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card img{
+  width: 100%;
+  vertical-align: middle;
+}
