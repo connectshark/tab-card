@@ -4,15 +4,82 @@
   list-style: none;
   font-family: 'Roboto Mono', 'Noto Sans TC', sans-serif;
 }
-.box{
-  width: 600px;
-  margin: auto;
+.radio{
+  display: none;
 }
+
+.tabs{
+  font-size: 0;
+}
+
+.tabs{
+  margin-bottom: 20px;
+}
+
+.tab{
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+  width: 33%;
+  background-color: #fff;
+  color: #6e6e6e;
+  border-radius: 10px;
+  transition: color .3s, background .3s;
+}
+
+.box{
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  padding: 30px 0 0;
+}
+
+
 .card{
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 7px 8px 22px #6f778940;
+  display:  none;
 }
 .card img{
   width: 100%;
   vertical-align: middle;
+}
+.card .content{
+  padding: 20px;
+  box-sizing: border-box;
+}
+.card .content h3{
+  font-size: 36px;
+  line-height: 2;
+}
+
+.card .content p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+
+
+
+#tab1:checked ~ .card1{
+  display: block;
+}
+#tab2:checked ~ .card2{
+  display: block;
+}
+#tab3:checked ~ .card3{
+  display: block;
+}
+#tab1:checked ~ .tabs .tab1{
+  background-color: #333;
+  color: #fff;
+}
+#tab2:checked ~ .tabs .tab2{
+  background-color: #333;
+  color: #fff;
+}
+#tab3:checked ~ .tabs .tab3{
+  background-color: #333;
+  color: #fff;
 }
